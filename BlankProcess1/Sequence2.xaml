@@ -1,0 +1,129 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence2" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="690,1170" sap2010:WorkflowViewState.IdRef="Sequence2_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="54">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="22">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence2" sap:VirtualizedContainerService.HintSize="530,1005" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: (836) Ash Meets Snorlax After Returning From Hoenn Region (Hindi) |Pokémon Advan" sap:VirtualizedContainerService.HintSize="488,913" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="454,697" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Int32" Name="index" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="412,61" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[index]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">0</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:InterruptibleWhile DisplayName="While" sap:VirtualizedContainerService.HintSize="412,504" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,339" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ClickType="Single" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.youtube.com/watch?v=7yDGiNVJI2Y" DesignTimeRectangle="118, 560, 46, 40" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl aaname='Play (k)' parentid='movie_player' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Play (k)' parentid='movie_player' tag='BUTTON' type='' /&gt;" ImageBase64="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" InformativeScreenshot="02f7343bd3f75b6eacf77178944d1170.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(836) Ash Meets Snorlax After Returning From Hoenn Region (Hindi) |Pokémon Advanced Battle In Hindi| - YouTube' /&gt;" SearchSteps="FuzzySelector, Image">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="164, 560, 40, 40" FriendlyName="'A  https://www.youtube.…'" FullSelectorArgument="&lt;webctrl aaname='Next (SHIFT+n)' aria-role='button' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Next (SHIFT+n)' aria-role='button' tag='A' type='' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                  <uix:NClick ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" />
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+              <ui:InterruptibleWhile.Condition>
+                <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="index &lt; 10" />
+              </ui:InterruptibleWhile.Condition>
+            </ui:InterruptibleWhile>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACUSURBVDhPpZIBDYAgEEUvAhGMQAQiEIEIRiASEYxik+8d4ER3OBG3p/iPvY3jCMAUajjC9UNkGFeJHc66uQuIQl6OEYqAyDbhKFYE/hGOEEQgZ9OKwL4Dzum1QnwXnE9KwLJoez4Ktu2nQI7gvV4rZEG/iYavW8svchMnr5E/vJgYJH5VSTvKKyO9edIZ5QnU8DugAz5ePeeqirlIAAAAAElFTkSuQmCC" InformativeScreenshot="c41693e540b8afeafd948540f4a80329.png" Selector="&lt;html app='chrome.exe' title='(836) Ash Meets Snorlax After Returning From Hoenn Region (Hindi) |Pokémon Advanced Battle In Hindi| - YouTube'/&gt;" Url="https://www.youtube.com/watch?v=7yDGiNVJI2Y" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

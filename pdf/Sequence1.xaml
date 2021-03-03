@@ -1,0 +1,124 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence1" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="687,947" sap2010:WorkflowViewState.IdRef="Sequence1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="74">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="44">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="476,742" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Text and Image PDF.pdf - Adobe Reader" sap:VirtualizedContainerService.HintSize="434,650" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,361" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="imagetext" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Text 'text Sample'" sap:VirtualizedContainerService.HintSize="334,168" sap2010:WorkflowViewState.IdRef="GetOCRText_1">
+              <ui:GetOCRText.OCREngine>
+                <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                  <ActivityFunc.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                  </ActivityFunc.Argument>
+                  <p:UiPathScreenOCR ApiKey="{x:Null}" Endpoint="{x:Null}" Output="{x:Null}" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_1" Image="[Image]" Language="auto" Profile="Screen" Scale="1" Text="[imagetext]" />
+                </ActivityFunc>
+              </ui:GetOCRText.OCREngine>
+              <ui:GetOCRText.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dd6c7d74-2bb6-4392-95a4-80f74228f3d6" InformativeScreenshot="a54b482a2516040fa487b94f146bc935" Selector="&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl name='heavily embellished capitals and curly flour-  ishes, my first i*' role='text' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:GetOCRText.Target>
+              <ui:GetOCRText.Text>
+                <OutArgument x:TypeArguments="x:String">[imagetext]</OutArgument>
+              </ui:GetOCRText.Text>
+            </ui:GetOCRText>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[imagetext]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp FilePath="C:\Program Files (x86)\Adobe\Reader 11.0\Reader\acrord32.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARUSURBVFhH7ZVdbFNlGMcPZM4tkdbEL9BRkEiByWK40BjMEm+c3poQvNDFaIIXxhsYSyYjCCRLTCa0UcscU+P0grkwBRnGdQvE4ujHNhaGG+0a12320+yj67rvj7/v85694213upwauPOf/NK+PT3P73mf03Oq/B+dyY9EIgiHwwiFQpxgMLgKrekYQd+LRqP8/dDQ0FV27kNqiQy59OwLeBAwOfr6+jA8PDxRXl7+xIpubRq2F+GXl19Lof3Doxx53fbmOynfWQ+qGQgE4HQ6QWHNJDI2UW96Hhe2FaUgMt7nRVPR/pUVMHDxcspxSvq5BNUcGBhYbYDCJpFgurWX4/zWPfhh294UKPQ6bL+G25ZzfG1/6z0kgyHcLKvk6/RzZKimPAERv9/fzZQ5qnklnz+zC9+yjmUojftLMMom4D71KV/T590WG0dO+rkE1aQGXC7Xyrfuxev1fsW0G1U7S/XTO1HLOpYRufPN96treg07Pbh+5BhfXzn4Lkc+T0A1BwcH0dXVhcbGRlitVthsNtjtdiQSiSWfz3eAqTfwBqq2PAdbwe4UKOlryu2v6zWPp0M16S7o7+9Hc3Mz6urqeBNVVVWwWCx0m95l6lzewInNO2BlI1uPiwdKUbPnRc1jWlBNaiAWi/FLwcaOnp4euN1uOBwOfnsy9eO8gYont+NBwH71GBsbw/j4OCcej2N0dJQ/tOhBxdQ7eANGo3Erw7weeXl5JR6PBwTtQrwXdHR0wLExFzd2FcJZVo7e3l7+JJTlExMTdP05k5OT1IBZNJDP2LQeOTk5+2ikmaDddm/IhffwUfjPWPjjeGRkhIu15Mlk8l4DOmOm8WWCRv2n4THc3bsPkStXU8Ra8qmpqewbIEkmaMx3XnkVbiUXsRt/aIpl+X9qQFzPdMRufRWVcCgPZxQL+fT0NIdqqqX1xSxE6Yjd9lUch13Jw1815zXFQj4zM8OhmmppfTELkYzYKfGb4Sm0mnaihRFnt1q6WJbPzs5m34AsE4iddn98Aj8bNiN804Wf2Gv72+9nFBNzc3PZNyBkAjHecbbbHw1b0HnsJJeGnG5cYOtLRS/B39jEcR8/jVvVVkQ8nVw+Pz+ffQNCKI+WcDNxg2k3Qi4PXJWncLm4BLXKI5waxjllE74zFaKl9BD7pyxEoPU6FhYWsm9AlorRBpnUxgREU/HraK88jYGWNiSiMT7qQOs1/Fr6AWrZX3S1YoDVWIBQ5y0sLi5m34B8PeORKNo+KsNZVrSh+I3Vayuur4BGTdCOieTIKJcvLS1l34D4Ef3t7sSXbJRn2G6If3x+TaksJqkQE8vLy9k3IARn2Tg/UYycjrr6FKEszSQmKFRTLa0vZiE4aTShQnkUv3/2xRqhLM0kFqGaaml9MaeLBFpCWZouFqGaaml9McsiLaEeqRyqqZbWF/N6Mr1SOVRTLa0vBYyDjLL7BNWimrqTz6ATqOv7AdViNRXlX+Io0taRa+qrAAAAAElFTkSuQmCC" InformativeScreenshot="8dffa54df9b099f51e1988a1e145cee2.png" Selector="&lt;wnd app='acrord32.exe' cls='AcrobatSDIWindow' title='Text and Image PDF.pdf - Adobe Reader'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

@@ -1,0 +1,110 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="629,1336" sap2010:WorkflowViewState.IdRef="Sequence_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="60">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="22">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="476,1131" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:List(snm:MailMessage)" Name="messages" />
+      <Variable x:TypeArguments="ui:Image" Name="screenshot1" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: " sap:VirtualizedContainerService.HintSize="434,854" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,565" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTakeScreenshot DisplayName="Take Screenshot 'SysListView32'" FileName="screenshot.png" FileNameMode="Index" sap:VirtualizedContainerService.HintSize="334,241" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" OutImage="[screenshot1]">
+              <uix:NTakeScreenshot.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 2732, 768" ElementType="List" FriendlyName="'SysListView32'" FullSelectorArgument="&lt;wnd cls='SysListView32' title='FolderView' /&gt;" FuzzySelectorArgument="&lt;wnd cls='SysListView32' title='FolderView' /&gt;" ImageBase64="" InformativeScreenshot="a86086fa18bb9937f9702273c3652c29.png" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='WorkerW' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector" />
+              </uix:NTakeScreenshot.Target>
+            </uix:NTakeScreenshot>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[screenshot1.ToString]" />
+            <ui:SaveImage DisplayName="Save Image" FileName="Untitled.png" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="SaveImage_1" Image="[screenshot1]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp FilePath="C:\Windows\explorer.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMISURBVFhH7ZbtS1NhGMb3X/QvWCkEZmofDHHzpblp29SlEREREUGf+hj0KQoioqgvEQX+CbVsa77uzZfpcZupZZaJ8zQT5gzUc/Scq/s5PnLKHWFO2Ze84AcPz/1c13VzPh3TkY60o7nXJoFAjqSJU9x6ONpVkAuHu8TsSxP2w5LPDMw/Br7f2z8LzwVeq2vyqQm5MPPqGFJeKzD3APh8Kz9m7oDX6sLsXeTMl9sUdPNA8FpdmL6BQsJrdWHqOgoJr9WFqWs0KBy8Vhcmr6KQ8FpdmLxCg8LBa3Xh02XsRp3QUfZD4l+vUTav1YWJS9hBTXRAiXdgM9YOebwdG8JFbIztD4k8zMsytiiLZf7dwWt1YaKdBu1UzIxurI+2YXWoBemwC8tBJ34FnFgKOHKCvWWedMSlZaxRFstk2Uhs9/BaXUi4ocbd2BpvxVq0BSsRJzp7fXB2/jgQLGMl7NAyNylbjbfREm6jBWgYa4EsuPB7yIFUnx22N3M4+2L2QLCMVL9dy5THXFCoA/FWgwXiLlrASY8cyESakOy2Ggbmg9jTqGVKow5awEkLuAwWiDmgjl+APNqMTNiGpL/BMCwfxO7zyIRskKLNUKiDdfFaXYg10wJNtICdHluR/FhnGJYPYne9lilF7VCEJlqg2WCBcTtUwQY5Sp8r2EAL1JL5axaznhrMdZkx77VgwbcNO7O7bzQz8oj+Wi1TGmmkBWxgXbxWFwQr1DEr5BH6XME6JOmHo/LZdBYL3hos99ViNVSPtcFt2Jnd7eUR/WZkAnWQhhugUAfr4rW6MGaBGrVAHqLHA9VIfqhCxZNEFklvFdJ91ViP1GBzxKzBziv91RB95ww97J5lSoM1UKgDoxaDBYYroQ5VQg6XI9NbhqSnFGceCVksvi/FSk8ZNoLlUAYrNNiZecQuY49IHjaXQtse1sVrdSFSIqihEsiBYqz6T2DxbRHKHg5n8fNdETI0lwZOQgkVa7Az86Q8x409niJtvuNBuCT7n9BIp++HsBs+2lP5eI70P8tk+gMabT1X5bEGngAAAABJRU5ErkJggg==" InformativeScreenshot="5c674d0a1d69befeb9aae69d543a7e4f.png" Selector="&lt;wnd app='explorer.exe' cls='WorkerW' idx='*' /&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="Send from ui path" DisplayName="Send SMTP Mail Message" Email="rajankhadka5@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="434,145" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Name="Rajan Khadka" Password="ThE RK9848041474" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="UIPath" To="khadkarajan99999@gmail.com">
+      <ui:SendMail.Files>
+        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+          <InArgument x:TypeArguments="x:String">
+            <Literal x:TypeArguments="x:String">screenshot.png</Literal>
+          </InArgument>
+        </scg:List>
+      </ui:SendMail.Files>
+    </ui:SendMail>
+  </Sequence>
+</Activity>
